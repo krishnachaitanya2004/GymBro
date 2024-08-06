@@ -15,9 +15,11 @@ def model(image_path):
    movenet = model.signatures['serving_default']
 
    outputs = movenet(image)
-   keypoints = outputs['output_0'].numpy().reshape(-1, 3)
+
+   keypoints = outputs['output_0'].numpy().reshape(-1,3)
 
    angles = get_angles.get_angles(keypoints)
-   for angle in angles:
-      print("Angle in degrees between {}: {:.2f}".format(angle, angles[angle]))
+   return angles
+   
+   
 
