@@ -1,26 +1,103 @@
-# GymBro
-# Team Members:
-1. Gorle Krishna Chaitanya
-2. [Desai Sai Pranav](https://github.com/saipranavdesai)
-3. [Gangisetty Krishna Sai Kusal](https://github.com/KusalG05)
-4. [Nagasai Saketh Naidu](https://github.com/noobcoder45)
+# GymBro: AI-Powered Fitness Assistant 🏋️‍♂️🤖
 
-This project is aimed to help user to exercise correctly by showing him/her the correct posture. 
+### Enhancing exercise posture through AI-driven assistance.
 
-Here is video of how this project output is:
+---
 
-<video width="640" height="480" controls>
-  <source src="output_pushup (1).mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+## 🔍 **Overview**
+GymBro is a smart, virtual fitness assistant designed to help beginners perform exercises correctly. By leveraging cutting-edge deep learning and computer vision techniques, GymBro analyzes your posture and provides real-time feedback for improvement, making fitness more accessible and injury-free.
 
-## Assumptions
-1. Camera is statioanry and user is positioned as requested, for example, side view for pushup
-2. Whole body appear in video preferably 
+---
 
-## References
+## 👥 **Meet the Team**
+| Roll No.     | Team Member                  |  
+|--------------|------------------------------|
+| 210050043    | Desai Sai Pranav             |
+|210050051    | Gangisetty Krishna Sai Kusal  |  
+| 210050057    | Gorle Krishna Chaitanya      |  
+| 210050103    |  Nagasai Saketh Naidu        |  
 
+---
+
+## 🚀 **Why GymBro?**
+- 🌟 The fast-paced lifestyle and sedentary work culture lead to poor fitness levels.
+- 🍔 Unhealthy eating habits combined with long commutes result in limited wellness time.
+- 🏋️‍♀️ Many individuals lack access to physical trainers, leading to improper exercise techniques and injuries.
+- 📊 **Fact:** A National Health and Nutrition Survey (Japan) highlights a 30% obesity rate in desk-job engineers — 10% higher than their non-engineer peers.
+
+---
+
+## 🌟 **Get Started**
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/YourRepo/GymBro.git
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+3. Run the project
+   ```bash
+   python main.py
+
+
+## 🔧 **Key Features**
+1. **Real-Time Pose Estimation**:
+   - Detects 17 key body points using the ultra-fast **MoveNet** model.
+   - Calculates critical angles like shoulders, elbows, and wrists for posture analysis.
+   - Optimized for real-time feedback.
+
+2. **Trainer Key-Frame Extraction**:
+   - Extracts key frames from trainer videos to benchmark correct postures.
+   - Captures and saves critical angles as vectors for comparison.
+
+3. **Dynamic Time Warping (DTW) & Optical Flow Tracking**:
+   - Aligns user and trainer video frames, enabling accurate comparison despite timing differences.
+
+4. **Affine Transformation**:
+   - Aligns trainer and user frames into a common reference for consistent posture evaluation.
+
+---
+
+## 📚 **Technical Pipeline**
+1. **Pose Estimation**:
+   - Tracks essential key points (e.g., shoulders, elbows, hips, knees).
+   - Extracts angles like `Right Shoulder - Right Elbow - Right Wrist`.
+
+2. **Trainer Key-Frames**:
+   - Captures and stores reference key frames with associated key points and angles.
+
+3. **Dynamic Time Warping**:
+   - Matches user frames with trainer key-frames for precise posture alignment.
+
+4. **Optical Flow Tracking**:
+   - Monitors user’s motion to match dynamic trainer movements.
+
+5. **Affine Transformation**:
+   - Applies transformations for unified frame alignment across users and trainers.
+
+---
+
+
+## 🎯 **Results**
+- **Posture Comparison:**
+  - Clear visual differences between trainer (green) and user (red) are identified for correction.
+- **Improvement Tracking:**
+  - User feedback visually demonstrates posture improvement over attempts.
+
+| User Frame       | Trainer Frame       | Comparison        |
+|------------------|---------------------|-------------------|
+| ![User](user.jpg)| ![Trainer](trainer.jpg)| ![Comparison](comparison.jpg)|
+
+---
+
+
+
+## 🔗 **References**
 1. [GitHub Repo for output reference](https://github.com/NgoQuocBao1010/Exercise-Correction?tab=readme-ov-file)
 2. [Paper Reference](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8856547&tag=1)
 3. [Kaggle Model by Google](https://www.kaggle.com/models/google/movenet/tensorFlow2/singlepose-lightning/4?tfhub-redirect=true)
 4. [Tensorflow Documentation](https://www.tensorflow.org/)
+---
+
+
+
+
