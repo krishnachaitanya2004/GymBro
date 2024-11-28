@@ -1,6 +1,5 @@
 # 🌟 GymBro: AI-Powered Exercise Posture Assistance 💪
 
-![GymBro Logo](https://via.placeholder.com/800x200?text=GymBro+Logo)  
 > *Your Virtual Fitness Trainer: Perfect Your Form Anytime, Anywhere!*  
 
 ---
