@@ -83,7 +83,7 @@ GymBro is a smart, virtual fitness assistant designed to help beginners perform 
 - **Improvement Tracking:**
   - User feedback visually demonstrates posture improvement over attempts.
 - Here a pic showing how to maintain a correct posture while doing a **PushUp**
-  ![alt text](https://github.com/krishnachaitanya2004/GymBro/results/final_res.png?raw=true)
+  ![alt text](https://github.com/krishnachaitanya2004/GymBro/blob/main/results/final_res.png)
 
 
 ---
