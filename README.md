@@ -119,4 +119,4 @@ Feel free to open an issue or submit a pull request. Let’s make fitness access
 
 ### 🌟 Star us on GitHub if you find this project helpful! 😊
 
-![GitHub Stars](https://img.shields.io/github/stars/YourUsername/GymBro?style=social)  
+![GitHub Stars](https://img.shields.io/github/stars/krishnachaitanya2004/GymBro?style=social)  
