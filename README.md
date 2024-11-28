@@ -82,18 +82,21 @@ GymBro is a smart, virtual fitness assistant designed to help beginners perform 
   - Clear visual differences between trainer (green) and user (red) are identified for correction.
 - **Improvement Tracking:**
   - User feedback visually demonstrates posture improvement over attempts.
-- Here a pic showing how to maintain a correct posture 
+- Here a pic showing how to maintain a correct posture while doing a **PushUp**
+  ![alt text](https://github.com/krishnachaitanya2004/GymBro/results/final_res.png?raw=true)
+
 
 ---
-
-
-
 ## 🔗 **References**
 1. [GitHub Repo for output reference](https://github.com/NgoQuocBao1010/Exercise-Correction?tab=readme-ov-file)
 2. [Paper Reference](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8856547&tag=1)
 3. [Kaggle Model by Google](https://www.kaggle.com/models/google/movenet/tensorFlow2/singlepose-lightning/4?tfhub-redirect=true)
 4. [Tensorflow Documentation](https://www.tensorflow.org/)
 ---
+
+Hope you Enjoy the **Smarter Way** of being fit.
+
+Made with ❤️ in Python 🐍
 
 
 
