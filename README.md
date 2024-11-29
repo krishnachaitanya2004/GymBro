@@ -19,7 +19,7 @@ GymBro is a smart, virtual fitness assistant designed to help beginners perform 
 
 ---
 
-## 🚀 **Why GymBro?**
+## 🚀 **Motivation behind GymBro?**
 - 🌟 The fast-paced lifestyle and sedentary work culture lead to poor fitness levels.
 - 🍔 Unhealthy eating habits combined with long commutes result in limited wellness time.
 - 🏋️‍♀️ Many individuals lack access to physical trainers, leading to improper exercise techniques and injuries.
