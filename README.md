@@ -58,21 +58,32 @@ GymBro is a smart, virtual fitness assistant designed to help beginners perform 
 ---
 
 ## 📚 **Technical Pipeline**
-1. **Pose Estimation**:
-   - Tracks essential key points (e.g., shoulders, elbows, hips, knees).
-   - Extracts angles like `Right Shoulder - Right Elbow - Right Wrist`.
 
-2. **Trainer Key-Frames**:
-   - Captures and stores reference key frames with associated key points and angles.
+1. **Pose Estimation**
+- Tracks essential key points (e.g., shoulders, elbows, hips, knees) using advanced models like OpenPose, MediaPipe, or HRNet.
+- Extracts joint angles such as `Right Shoulder - Right Elbow - Right Wrist` using vector calculations for precise measurements.
+- Incorporates confidence scores to prioritize high-reliability key-points and filters noisy data with temporal smoothing (e.g., Kalman filtering).
 
-3. **Dynamic Time Warping**:
-   - Matches user frames with trainer key-frames for precise posture alignment.
+2. **Trainer Key-Frames**
+- Captures and stores reference key-frames, representing ideal poses, with associated key points, angles, and optional annotations for motion dynamics.
+- Stores key-frames in a structured format (e.g., JSON or database) to facilitate comparison and analysis.
+- Automates key-frame extraction by clustering trainer motion data to identify critical transitions or peak movements.
 
-4. **Optical Flow Tracking**:
-   - Monitors user’s motion to match dynamic trainer movements.
+3. **Dynamic Time Warping (DTW)**
+- Matches user frames with trainer key-frames by comparing time-series data of joint angles or key-point positions.
+- Handles variations in execution speed by aligning user movements to trainer motions dynamically.
+- Optimized for real-time performance, ensuring feedback is delivered with minimal delay.
 
-5. **Affine Transformation**:
-   - Applies transformations for unified frame alignment across users and trainers.
+4. **Optical Flow Tracking**
+- Tracks user’s motion at a pixel level to capture fine-grained movement details, complementing key-point tracking.
+- Enhances movement matching accuracy by aligning dynamic motion patterns with trainer trajectories.
+- Detects subtle shifts in posture or flow that may not be evident from key-points alone, ensuring holistic feedback.
+
+5. **Affine Transformation**
+- Applies transformations (scaling, rotation, translation) to align user and trainer poses to a unified reference frame.
+- Normalizes variations in camera angle, user height, and limb proportions to ensure consistent analysis.
+- Ensures robust posture alignment across diverse user profiles and setups, improving generalization.
+
 
 ---
 
