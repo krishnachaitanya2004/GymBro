@@ -1,0 +1,29 @@
+notes
+
+
+There are two versions of MoveNet: the performance-oriented Lightning [22], and the accuracy-oriented Thunder [23].
+
+We were limited by computer constraints and time constraints
+
+17 key-points: 5 in the face and 12 in the body
+
+Simplified Analogy:
+Imagine trying to detect a person in a photo and figure out their body pose:
+* First, you highlight areas (heatmap) where people are likely to be.
+* Pick the brightest spot as the person’s center.
+* Place key-points where the body parts (like knees and elbows) are likely to be.
+* Ignore anything that’s too far away from these key-points (e.g., background noise).
+* Adjust the positions to maximize confidence in each key-point’s location.
+
+Key-Point Coordinates:
+* For each detected person, MoveNet outputs the pixel coordinates of the 7 key-points (or more, depending on the model variant and task).
+Confidence Scores:
+* Each key-point is accompanied by a confidence score between 0 and 1.
+* This score indicates the model's certainty about the detected location of that key-point.
+
+Euclidean matching vs dynamic time warping
+* DTW is an algorithm that measures the similarity between two time series by warping them in a non-linear way to match them up.
+* 
+Dynamic time warping (DTW) is a way of comparing two, temporal sequences that don't perfectly sync up through mathematics
+
+Confidence score 
